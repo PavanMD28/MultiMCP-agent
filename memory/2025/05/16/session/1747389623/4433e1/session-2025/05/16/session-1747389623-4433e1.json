@@ -1,0 +1,19 @@
+[
+  {
+    "timestamp": 1747389623.998606,
+    "type": "run_metadata",
+    "text": "Started new session with input:  at 2025-05-16T10:00:23.998606",
+    "tool_name": null,
+    "tool_args": null,
+    "tool_result": null,
+    "final_answer": null,
+    "tags": [
+      "run_start"
+    ],
+    "success": null,
+    "metadata": {
+      "start_time": "2025-05-16T15:30:23.998606",
+      "step": 0
+    }
+  }
+]

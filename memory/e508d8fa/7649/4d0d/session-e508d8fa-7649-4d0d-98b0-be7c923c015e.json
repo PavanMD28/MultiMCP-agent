@@ -1,0 +1,46 @@
+[
+  {
+    "timestamp": 1747674119.149666,
+    "type": "tool_output",
+    "text": "Output of perception: {'result': PerceptionResult(intent='information_retrieval', entities=['amount paid', 'anmol singh', 'dlf', 'capbridge'], tool_hint='document_search', tags=[], selected_servers=['documents'])}",
+    "tool_name": "perception",
+    "tool_args": {
+      "perception": {
+        "intent": "information_retrieval",
+        "entities": [
+          "amount paid",
+          "anmol singh",
+          "dlf",
+          "capbridge"
+        ],
+        "tool_hint": "document_search",
+        "tags": [],
+        "selected_servers": [
+          "documents"
+        ]
+      }
+    },
+    "tool_result": {
+      "result": {
+        "intent": "information_retrieval",
+        "entities": [
+          "amount paid",
+          "anmol singh",
+          "dlf",
+          "capbridge"
+        ],
+        "tool_hint": "document_search",
+        "tags": [],
+        "selected_servers": [
+          "documents"
+        ]
+      }
+    },
+    "final_answer": null,
+    "tags": [
+      "perception"
+    ],
+    "success": true,
+    "metadata": {}
+  }
+]

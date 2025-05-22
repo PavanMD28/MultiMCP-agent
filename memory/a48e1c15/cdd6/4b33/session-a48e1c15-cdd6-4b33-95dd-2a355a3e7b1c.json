@@ -1,0 +1,19 @@
+[
+  {
+    "timestamp": 1747658100.8587055,
+    "type": "run_metadata",
+    "text": "Started new session with input:  What is the relationship between Gensol and Go-Auto? at 2025-05-19T12:35:00.858705",
+    "tool_name": null,
+    "tool_args": null,
+    "tool_result": null,
+    "final_answer": null,
+    "tags": [
+      "run_start"
+    ],
+    "success": null,
+    "metadata": {
+      "start_time": "2025-05-19T18:05:00.858705",
+      "step": 0
+    }
+  }
+]

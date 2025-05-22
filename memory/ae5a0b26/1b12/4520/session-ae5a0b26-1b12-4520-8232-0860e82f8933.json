@@ -1,0 +1,62 @@
+[
+  {
+    "timestamp": 1747674628.969094,
+    "type": "tool_output",
+    "text": "Output of perception: {'result': PerceptionResult(intent='information_retrieval', entities=['Anmol Singh', 'Capbridge', 'amount paid'], tool_hint='document_search', tags=[], selected_servers=['documents'])}",
+    "tool_name": "perception",
+    "tool_args": {
+      "perception": {
+        "intent": "information_retrieval",
+        "entities": [
+          "Anmol Singh",
+          "Capbridge",
+          "amount paid"
+        ],
+        "tool_hint": "document_search",
+        "tags": [],
+        "selected_servers": [
+          "documents"
+        ]
+      }
+    },
+    "tool_result": {
+      "result": {
+        "intent": "information_retrieval",
+        "entities": [
+          "Anmol Singh",
+          "Capbridge",
+          "amount paid"
+        ],
+        "tool_hint": "document_search",
+        "tags": [],
+        "selected_servers": [
+          "documents"
+        ]
+      }
+    },
+    "final_answer": null,
+    "tags": [
+      "perception"
+    ],
+    "success": true,
+    "metadata": {}
+  },
+  {
+    "timestamp": 1747674630.6041074,
+    "type": "tool_output",
+    "text": "Output of plan: {'result': 'import json\\nasync def solve():\\n    # FUNCTION_CALL: 1\\n    \"\"\"Search documents to get relevant extracts. Usage: input={\"input\": {\"query\": \"your query\"}} result = await mcp.call_tool(\\'search_stored_documents\\', input)\"\"\"\\n    input = {\"input\": {\"query\": \"How much Anmol Singh paid to Capbridge?\"}}\\n    result = await mcp.call_tool(\\'search_stored_documents\\', input)\\n\\n    # FURTHER_PROCESSING_REQUIRED\\n    return f\"FURTHER_PROCESSING_REQUIRED: {result}\"'}",
+    "tool_name": "plan",
+    "tool_args": {
+      "plan": "import json\nasync def solve():\n    # FUNCTION_CALL: 1\n    \"\"\"Search documents to get relevant extracts. Usage: input={\"input\": {\"query\": \"your query\"}} result = await mcp.call_tool('search_stored_documents', input)\"\"\"\n    input = {\"input\": {\"query\": \"How much Anmol Singh paid to Capbridge?\"}}\n    result = await mcp.call_tool('search_stored_documents', input)\n\n    # FURTHER_PROCESSING_REQUIRED\n    return f\"FURTHER_PROCESSING_REQUIRED: {result}\""
+    },
+    "tool_result": {
+      "result": "import json\nasync def solve():\n    # FUNCTION_CALL: 1\n    \"\"\"Search documents to get relevant extracts. Usage: input={\"input\": {\"query\": \"your query\"}} result = await mcp.call_tool('search_stored_documents', input)\"\"\"\n    input = {\"input\": {\"query\": \"How much Anmol Singh paid to Capbridge?\"}}\n    result = await mcp.call_tool('search_stored_documents', input)\n\n    # FURTHER_PROCESSING_REQUIRED\n    return f\"FURTHER_PROCESSING_REQUIRED: {result}\""
+    },
+    "final_answer": null,
+    "tags": [
+      "plan"
+    ],
+    "success": true,
+    "metadata": {}
+  }
+]

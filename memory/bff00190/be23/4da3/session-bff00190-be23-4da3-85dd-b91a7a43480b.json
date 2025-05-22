@@ -1,0 +1,380 @@
+[
+  {
+    "timestamp": 1747894217.6754053,
+    "type": "tool_output",
+    "text": "Output of perception: {'result': PerceptionResult(intent='Calculate the factorial of 5.', entities=['factorial', '5'], tool_hint='factorial', tags=[], selected_servers=['math'])}",
+    "tool_name": "perception",
+    "tool_args": {
+      "perception": {
+        "intent": "Calculate the factorial of 5.",
+        "entities": [
+          "factorial",
+          "5"
+        ],
+        "tool_hint": "factorial",
+        "tags": [],
+        "selected_servers": [
+          "math"
+        ]
+      }
+    },
+    "tool_result": {
+      "result": {
+        "intent": "Calculate the factorial of 5.",
+        "entities": [
+          "factorial",
+          "5"
+        ],
+        "tool_hint": "factorial",
+        "tags": [],
+        "selected_servers": [
+          "math"
+        ]
+      }
+    },
+    "final_answer": null,
+    "tags": [
+      "perception"
+    ],
+    "success": true,
+    "metadata": {}
+  },
+  {
+    "timestamp": 1747894219.0965173,
+    "type": "tool_output",
+    "text": "Output of plan: {'result': 'async def solve():\\n    # FUNCTION_CALL: 1\\n    \"\"\"Compute the factorial of a number. Usage: input={\"input\": {\"a\": 5}} result = await mcp.call_tool(\\'factorial\\', input)\"\"\"\\n    input = {\"input\": {\"a\": 5}}\\n    result = await mcp.call_tool(\\'factorial\\', input)\\n    final_result = json.loads(result.content[0].text)[\"result\"]\\n\\n    # FINAL_RESULT\\n    return f\"FINAL_ANSWER: {final_result}\"'}",
+    "tool_name": "plan",
+    "tool_args": {
+      "plan": "async def solve():\n    # FUNCTION_CALL: 1\n    \"\"\"Compute the factorial of a number. Usage: input={\"input\": {\"a\": 5}} result = await mcp.call_tool('factorial', input)\"\"\"\n    input = {\"input\": {\"a\": 5}}\n    result = await mcp.call_tool('factorial', input)\n    final_result = json.loads(result.content[0].text)[\"result\"]\n\n    # FINAL_RESULT\n    return f\"FINAL_ANSWER: {final_result}\""
+    },
+    "tool_result": {
+      "result": "async def solve():\n    # FUNCTION_CALL: 1\n    \"\"\"Compute the factorial of a number. Usage: input={\"input\": {\"a\": 5}} result = await mcp.call_tool('factorial', input)\"\"\"\n    input = {\"input\": {\"a\": 5}}\n    result = await mcp.call_tool('factorial', input)\n    final_result = json.loads(result.content[0].text)[\"result\"]\n\n    # FINAL_RESULT\n    return f\"FINAL_ANSWER: {final_result}\""
+    },
+    "final_answer": null,
+    "tags": [
+      "plan"
+    ],
+    "success": true,
+    "metadata": {}
+  },
+  {
+    "timestamp": 1747894221.9569788,
+    "type": "tool_output",
+    "text": "Output of solve_sandbox: {'result': 'FINAL_ANSWER: 120'}",
+    "tool_name": "solve_sandbox",
+    "tool_args": {
+      "plan": "async def solve():\n    # FUNCTION_CALL: 1\n    \"\"\"Compute the factorial of a number. Usage: input={\"input\": {\"a\": 5}} result = await mcp.call_tool('factorial', input)\"\"\"\n    input = {\"input\": {\"a\": 5}}\n    result = await mcp.call_tool('factorial', input)\n    final_result = json.loads(result.content[0].text)[\"result\"]\n\n    # FINAL_RESULT\n    return f\"FINAL_ANSWER: {final_result}\""
+    },
+    "tool_result": {
+      "result": "FINAL_ANSWER: 120"
+    },
+    "final_answer": null,
+    "tags": [
+      "sandbox"
+    ],
+    "success": true,
+    "metadata": {}
+  },
+  {
+    "timestamp": 1747894297.8664777,
+    "type": "tool_output",
+    "text": "Output of perception: {'result': PerceptionResult(intent='Calculate the 10th Fibonacci number', entities=['Fibonacci', '10'], tool_hint='Fibonacci calculator', tags=[], selected_servers=['math'])}",
+    "tool_name": "perception",
+    "tool_args": {
+      "perception": {
+        "intent": "Calculate the 10th Fibonacci number",
+        "entities": [
+          "Fibonacci",
+          "10"
+        ],
+        "tool_hint": "Fibonacci calculator",
+        "tags": [],
+        "selected_servers": [
+          "math"
+        ]
+      }
+    },
+    "tool_result": {
+      "result": {
+        "intent": "Calculate the 10th Fibonacci number",
+        "entities": [
+          "Fibonacci",
+          "10"
+        ],
+        "tool_hint": "Fibonacci calculator",
+        "tags": [],
+        "selected_servers": [
+          "math"
+        ]
+      }
+    },
+    "final_answer": null,
+    "tags": [
+      "perception"
+    ],
+    "success": true,
+    "metadata": {}
+  },
+  {
+    "timestamp": 1747894299.3290594,
+    "type": "tool_output",
+    "text": "Output of plan: {'result': 'import json\\nasync def solve():\\n    # FUNCTION_CALL: 1\\n    \"\"\"Generate first n Fibonacci numbers. Usage: input={\"input\": {\"n\": 10}} result = await mcp.call_tool(\\'fibonacci_numbers\\', input)\"\"\"\\n    input = {\"input\": {\"n\": 10}}\\n    result = await mcp.call_tool(\\'fibonacci_numbers\\', input)\\n    final_result = json.loads(result.content[0].text)[\"result\"]\\n\\n    # FINAL_RESULT\\n    return f\"FINAL_ANSWER: {final_result}\"'}",
+    "tool_name": "plan",
+    "tool_args": {
+      "plan": "import json\nasync def solve():\n    # FUNCTION_CALL: 1\n    \"\"\"Generate first n Fibonacci numbers. Usage: input={\"input\": {\"n\": 10}} result = await mcp.call_tool('fibonacci_numbers', input)\"\"\"\n    input = {\"input\": {\"n\": 10}}\n    result = await mcp.call_tool('fibonacci_numbers', input)\n    final_result = json.loads(result.content[0].text)[\"result\"]\n\n    # FINAL_RESULT\n    return f\"FINAL_ANSWER: {final_result}\""
+    },
+    "tool_result": {
+      "result": "import json\nasync def solve():\n    # FUNCTION_CALL: 1\n    \"\"\"Generate first n Fibonacci numbers. Usage: input={\"input\": {\"n\": 10}} result = await mcp.call_tool('fibonacci_numbers', input)\"\"\"\n    input = {\"input\": {\"n\": 10}}\n    result = await mcp.call_tool('fibonacci_numbers', input)\n    final_result = json.loads(result.content[0].text)[\"result\"]\n\n    # FINAL_RESULT\n    return f\"FINAL_ANSWER: {final_result}\""
+    },
+    "final_answer": null,
+    "tags": [
+      "plan"
+    ],
+    "success": true,
+    "metadata": {}
+  },
+  {
+    "timestamp": 1747894302.3805597,
+    "type": "tool_output",
+    "text": "Output of solve_sandbox: {'result': 'FINAL_ANSWER: [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]'}",
+    "tool_name": "solve_sandbox",
+    "tool_args": {
+      "plan": "import json\nasync def solve():\n    # FUNCTION_CALL: 1\n    \"\"\"Generate first n Fibonacci numbers. Usage: input={\"input\": {\"n\": 10}} result = await mcp.call_tool('fibonacci_numbers', input)\"\"\"\n    input = {\"input\": {\"n\": 10}}\n    result = await mcp.call_tool('fibonacci_numbers', input)\n    final_result = json.loads(result.content[0].text)[\"result\"]\n\n    # FINAL_RESULT\n    return f\"FINAL_ANSWER: {final_result}\""
+    },
+    "tool_result": {
+      "result": "FINAL_ANSWER: [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]"
+    },
+    "final_answer": null,
+    "tags": [
+      "sandbox"
+    ],
+    "success": true,
+    "metadata": {}
+  },
+  {
+    "timestamp": 1747894411.0356312,
+    "type": "tool_output",
+    "text": "Output of perception: {'result': PerceptionResult(intent='Summarize a PDF document.', entities=['S9_bug_report_summary.pdf'], tool_hint='PDF summarization', tags=[], selected_servers=['documents'])}",
+    "tool_name": "perception",
+    "tool_args": {
+      "perception": {
+        "intent": "Summarize a PDF document.",
+        "entities": [
+          "S9_bug_report_summary.pdf"
+        ],
+        "tool_hint": "PDF summarization",
+        "tags": [],
+        "selected_servers": [
+          "documents"
+        ]
+      }
+    },
+    "tool_result": {
+      "result": {
+        "intent": "Summarize a PDF document.",
+        "entities": [
+          "S9_bug_report_summary.pdf"
+        ],
+        "tool_hint": "PDF summarization",
+        "tags": [],
+        "selected_servers": [
+          "documents"
+        ]
+      }
+    },
+    "final_answer": null,
+    "tags": [
+      "perception"
+    ],
+    "success": true,
+    "metadata": {}
+  },
+  {
+    "timestamp": 1747894412.4874856,
+    "type": "tool_output",
+    "text": "Output of plan: {'result': 'async def solve():\\n    # FUNCTION_CALL: 1\\n    \"\"\"Convert PDF to markdown. Usage: input={\"input\": {\"file_path\": \"documents/sample.pdf\"} } result = await mcp.call_tool(\\'extract_pdf\\', input)\"\"\"\\n    input = {\"input\": {\"file_path\": \"S9_bug_report_summary.pdf\"} }\\n    result = await mcp.call_tool(\\'extract_pdf\\', input)\\n\\n    # FURTHER_PROCESSING_REQUIRED\\n    return f\"FURTHER_PROCESSING_REQUIRED: {result}\"'}",
+    "tool_name": "plan",
+    "tool_args": {
+      "plan": "async def solve():\n    # FUNCTION_CALL: 1\n    \"\"\"Convert PDF to markdown. Usage: input={\"input\": {\"file_path\": \"documents/sample.pdf\"} } result = await mcp.call_tool('extract_pdf', input)\"\"\"\n    input = {\"input\": {\"file_path\": \"S9_bug_report_summary.pdf\"} }\n    result = await mcp.call_tool('extract_pdf', input)\n\n    # FURTHER_PROCESSING_REQUIRED\n    return f\"FURTHER_PROCESSING_REQUIRED: {result}\""
+    },
+    "tool_result": {
+      "result": "async def solve():\n    # FUNCTION_CALL: 1\n    \"\"\"Convert PDF to markdown. Usage: input={\"input\": {\"file_path\": \"documents/sample.pdf\"} } result = await mcp.call_tool('extract_pdf', input)\"\"\"\n    input = {\"input\": {\"file_path\": \"S9_bug_report_summary.pdf\"} }\n    result = await mcp.call_tool('extract_pdf', input)\n\n    # FURTHER_PROCESSING_REQUIRED\n    return f\"FURTHER_PROCESSING_REQUIRED: {result}\""
+    },
+    "final_answer": null,
+    "tags": [
+      "plan"
+    ],
+    "success": true,
+    "metadata": {}
+  },
+  {
+    "timestamp": 1747894417.672391,
+    "type": "tool_output",
+    "text": "Output of solve_sandbox: {'result': 'FURTHER_PROCESSING_REQUIRED: meta=None content=[TextContent(type=\\'text\\', text=\\'{\\\\n  \"markdown\": \"# Bug Report Summary - S9 Improvements I. Configuration Fixes (config/profiles.yaml) 1. Incorrect MCP Server Working Directory Issue: MCP server paths were hardcoded with absolute directories tied to a specific development environment, breaking portability. Fix: Replaced with relative paths (\\\\\\\\\".\\\\\\\\\" or \\\\\\\\\"modules/\\\\\\\\\") to ensure configuration portability across systems. 2. Disabled Memory MCP Server Issue: The memory server configuration was commented out, disabling long-term memory and history access. Fix: Uncommented the memory server entry to restore its functionalities. II. MCP Server & Tool Enhancements (mcp_server_2.py) 1. Trailing Whitespace in Model Name Issue: A trailing space in QWEN_MODEL caused Ollama model invocation failures.\\\\\\\\n\\\\\\\\n\\\\\\\\n-----\\\\\\\\n\\\\\\\\n# Fix: Whitespace was removed for correct model recognition. 2. Inefficient Image Captioning in Web Conversion Issue: The tool used LLMs to caption downloaded webpage images, causing slowness, errors, and complexity. Fix: Refactored to simplify or remove captioning, relying on trafilatura for efficient markdown extraction. III. Core Agent Logic Improvements (agent.py, core/loop.py, modules/perception.py) 1. input() Causing EOFError or Hangs Issue: The input() call would crash or hang after tool executions due to subprocess interference. Fix: Moved input() to a thread using asyncio.to_thread(), added error handling, and cleaned up the prompt logic. 2. Incorrect mcp_server_descriptions Structure Issue: mcp_server_descriptions was passed as a list instead of a dictionary, causing an AttributeError. Fix:\\\\\\\\n\\\\\\\\n\\\\\\\\n-----\\\\\\\\n\\\\\\\\n# Corrected the structure to a dict for AgentContext and a list for MultiMCP. 3. Verbose Tool Outputs Affecting Planning Issue: Long tool outputs overwhelmed the LLM and led to poor or repetitive plans. Fix: Summarized or truncated tool outputs before sending them to the planning LLM. 4. Agent Loop Ending Prematurely (\\\\\\\\\"Max Steps Reached\\\\\\\\\") Issue: Tasks failed early despite being solvable within step limits. Fix: - Context is now concise (see III.3) - Tools are more robust and efficient (see II.2) - Agent loop better manages states and transitions IV. General Code Robustness 1. Simplified agent.py Loop Issue: Nested while True loops and multiple input() calls caused complexity and double prompts. Fix: Refactored to a single clean input call with proper shutdown of MCP servers on exit.\\\\\\\\n\\\\\\\\n\\\\\\\\n-----\\\\\\\\n\\\\\\\\n\"\\\\n}\\', annotations=None)] isError=False'}",
+    "tool_name": "solve_sandbox",
+    "tool_args": {
+      "plan": "async def solve():\n    # FUNCTION_CALL: 1\n    \"\"\"Convert PDF to markdown. Usage: input={\"input\": {\"file_path\": \"documents/sample.pdf\"} } result = await mcp.call_tool('extract_pdf', input)\"\"\"\n    input = {\"input\": {\"file_path\": \"S9_bug_report_summary.pdf\"} }\n    result = await mcp.call_tool('extract_pdf', input)\n\n    # FURTHER_PROCESSING_REQUIRED\n    return f\"FURTHER_PROCESSING_REQUIRED: {result}\""
+    },
+    "tool_result": {
+      "result": "FURTHER_PROCESSING_REQUIRED: meta=None content=[TextContent(type='text', text='{\\n  \"markdown\": \"# Bug Report Summary - S9 Improvements I. Configuration Fixes (config/profiles.yaml) 1. Incorrect MCP Server Working Directory Issue: MCP server paths were hardcoded with absolute directories tied to a specific development environment, breaking portability. Fix: Replaced with relative paths (\\\\\".\\\\\" or \\\\\"modules/\\\\\") to ensure configuration portability across systems. 2. Disabled Memory MCP Server Issue: The memory server configuration was commented out, disabling long-term memory and history access. Fix: Uncommented the memory server entry to restore its functionalities. II. MCP Server & Tool Enhancements (mcp_server_2.py) 1. Trailing Whitespace in Model Name Issue: A trailing space in QWEN_MODEL caused Ollama model invocation failures.\\\\n\\\\n\\\\n-----\\\\n\\\\n# Fix: Whitespace was removed for correct model recognition. 2. Inefficient Image Captioning in Web Conversion Issue: The tool used LLMs to caption downloaded webpage images, causing slowness, errors, and complexity. Fix: Refactored to simplify or remove captioning, relying on trafilatura for efficient markdown extraction. III. Core Agent Logic Improvements (agent.py, core/loop.py, modules/perception.py) 1. input() Causing EOFError or Hangs Issue: The input() call would crash or hang after tool executions due to subprocess interference. Fix: Moved input() to a thread using asyncio.to_thread(), added error handling, and cleaned up the prompt logic. 2. Incorrect mcp_server_descriptions Structure Issue: mcp_server_descriptions was passed as a list instead of a dictionary, causing an AttributeError. Fix:\\\\n\\\\n\\\\n-----\\\\n\\\\n# Corrected the structure to a dict for AgentContext and a list for MultiMCP. 3. Verbose Tool Outputs Affecting Planning Issue: Long tool outputs overwhelmed the LLM and led to poor or repetitive plans. Fix: Summarized or truncated tool outputs before sending them to the planning LLM. 4. Agent Loop Ending Prematurely (\\\\\"Max Steps Reached\\\\\") Issue: Tasks failed early despite being solvable within step limits. Fix: - Context is now concise (see III.3) - Tools are more robust and efficient (see II.2) - Agent loop better manages states and transitions IV. General Code Robustness 1. Simplified agent.py Loop Issue: Nested while True loops and multiple input() calls caused complexity and double prompts. Fix: Refactored to a single clean input call with proper shutdown of MCP servers on exit.\\\\n\\\\n\\\\n-----\\\\n\\\\n\"\\n}', annotations=None)] isError=False"
+    },
+    "final_answer": null,
+    "tags": [
+      "sandbox"
+    ],
+    "success": true,
+    "metadata": {}
+  },
+  {
+    "timestamp": 1747894418.513223,
+    "type": "tool_output",
+    "text": "Output of perception: {'result': PerceptionResult(intent='Summarize a PDF document', entities=['S9_bug_report_summary.pdf', 'summary'], tool_hint='documents', tags=[], selected_servers=['documents'])}",
+    "tool_name": "perception",
+    "tool_args": {
+      "perception": {
+        "intent": "Summarize a PDF document",
+        "entities": [
+          "S9_bug_report_summary.pdf",
+          "summary"
+        ],
+        "tool_hint": "documents",
+        "tags": [],
+        "selected_servers": [
+          "documents"
+        ]
+      }
+    },
+    "tool_result": {
+      "result": {
+        "intent": "Summarize a PDF document",
+        "entities": [
+          "S9_bug_report_summary.pdf",
+          "summary"
+        ],
+        "tool_hint": "documents",
+        "tags": [],
+        "selected_servers": [
+          "documents"
+        ]
+      }
+    },
+    "final_answer": null,
+    "tags": [
+      "perception"
+    ],
+    "success": true,
+    "metadata": {}
+  },
+  {
+    "timestamp": 1747894420.7114995,
+    "type": "tool_output",
+    "text": "Output of plan: {'result': 'async def solve():\\n    # FUNCTION_CALL: 1\\n    \"\"\"Search documents to get relevant extracts. Usage: input={\"input\": {\"query\": \"your query\"}} result = await mcp.call_tool(\\'search_stored_documents\\', input)\"\"\"\\n    input = {\"input\": {\"query\": \"summary of bug report S9\"}}\\n    result = await mcp.call_tool(\\'search_stored_documents\\', input)\\n\\n    # FURTHER_PROCESSING_REQUIRED\\n    return f\"FURTHER_PROCESSING_REQUIRED: {result}\"'}",
+    "tool_name": "plan",
+    "tool_args": {
+      "plan": "async def solve():\n    # FUNCTION_CALL: 1\n    \"\"\"Search documents to get relevant extracts. Usage: input={\"input\": {\"query\": \"your query\"}} result = await mcp.call_tool('search_stored_documents', input)\"\"\"\n    input = {\"input\": {\"query\": \"summary of bug report S9\"}}\n    result = await mcp.call_tool('search_stored_documents', input)\n\n    # FURTHER_PROCESSING_REQUIRED\n    return f\"FURTHER_PROCESSING_REQUIRED: {result}\""
+    },
+    "tool_result": {
+      "result": "async def solve():\n    # FUNCTION_CALL: 1\n    \"\"\"Search documents to get relevant extracts. Usage: input={\"input\": {\"query\": \"your query\"}} result = await mcp.call_tool('search_stored_documents', input)\"\"\"\n    input = {\"input\": {\"query\": \"summary of bug report S9\"}}\n    result = await mcp.call_tool('search_stored_documents', input)\n\n    # FURTHER_PROCESSING_REQUIRED\n    return f\"FURTHER_PROCESSING_REQUIRED: {result}\""
+    },
+    "final_answer": null,
+    "tags": [
+      "plan"
+    ],
+    "success": true,
+    "metadata": {}
+  },
+  {
+    "timestamp": 1747894431.4692488,
+    "type": "tool_output",
+    "text": "Output of solve_sandbox: {'result': \"FURTHER_PROCESSING_REQUIRED: meta=None content=[TextContent(type='text', text='date of FY ending, have received performance and career development reviews. 22 Content ----- 10. Health and safety management system: a. Whether an occupational health and safety management system has been implemented by the entity? (Y/ N). If yes, the coverage of such system? Yes, DLF has implemented an occupational health and safety management system aligned to ISO 45001, covering entire operations. It covers the entire business including project sites, managed assets (operational premises) and the hospitality division. b. What are the processes used to identify work-related hazards and assess risks on a routine and non-routine basis by the entity? - Incident Investigation and Risk Analysis: DLF has a well-developed group wide procedure for identification of work-related hazards, on routine and non-routine basis, as defined by its Management System Framework (MSF). Identification of safety related hazards is the responsibility at all levels of leadership in their respective areas of responsibility. The risk evaluation phase assesses the likelihood of causes and severity of consequences from the release of identified hazards against the standard HSE and Security risk threshold parameters. As part of this process, a 5x5 Risk Matrix is deployed across DLF which enables mitigation of risks, including health, safety, environmental and security risks, based on a hierarchy of controls. Furthermore, weekly walkthroughs and scheduled safety observations are performed by trained DLF employees, construction contractors and FM Partners. Occupational Health and Safety (OHS) observations arising from OHS risk assessments and audits, including reporting of leading and lagging indicators, are part of assurances and are reviewed periodically. - Health and Safety Audits: Health and safety audits are conducted for DLF\u2019s rental properties by independent agencies as per ISO 45001 standard. In addition, surprise safety performance audits are also conducted by external agency including DSS Sustainable Solutions India Private Limited and ERM India Private Limited for DLF\u2019s rental facilities. Risk assessments are reviewed on a yearly basis for any incidents reported, or based on enforcement agency, insurers or auditor\u2019s requirement, request received from the safety committee, any changes/ modifications made to the process or safety standards or legal requirement. Recommendations are Content implemented across the business units to prevent recurrence of similar incidents. c. \\\\x07Whether you have processes for workers to report the work-related hazards and to remove themselves from such risks. (Y/ N). Yes, DLF has a well-defined Standard Operating Procedure (SOP) for incident reporting, classification and investigation for any incidents related to health and safety. This process allows employees to report any work-related hazards and outlines the mechanism for recording and investigating an incident, recommending corrective and preventive actions and to communicate the lessons learned to prevent recurrence of similar incidents. For undertaking corrective and preventive actions, standard hierarchy of controls is followed to bring the hazard at \u2018As Low As Reasonably Practicable\u2019 (ALARP) level. Additionally, various initiatives have been undertaken to promote reporting of workrelated hazards and hazardous situations, such as: - **Safety Inspector of the Day (SIOD)** : Every day, one employee of a particular site is nominated as the SIOD. His duty is to take a round of the facility\\\\n[Source: DLF_13072023190044_BRSR.pdf, ID: DLF_13072023190044_BRSR_18]', annotations=None), TextContent(type='text', text='acquired based on traditional knowledge. |S. No.|Intellectual Property based on traditional knowledge|Owned/ Acquired (Y/ N)|Benefit shared (Y/ N)|Basis of calculating benefit share| |---|---|---|---|---| |Not Applicable||||| 5. \\\\x07Details of corrective actions taken or underway, based on any adverse order in intellectual property related disputes wherein usage of traditional knowledge is involved. |Name of authority|Brief of the Case|Corrective action taken| |---|---|---| |Not Applicable||| 17 Data is provided on the basis of proportion of suppliers covered from the total supplier base (by supplier count). 45 Content ----- DLF ANNUAL REPORT 2022 - 23 Business Responsibility and Sustainability Report 6. Details of beneficiaries of CSR Projects: |S. No.|CSR Project|No. of persons benefitted from CSR Projects|% of beneficiaries from vulnerable and marginalized groups| |---|---|---|---| |1|DLF CARES Education Support Programme.|1,550|100%| |2|Family Health Centre in Gwal Pahari, Gurugram in collaboration with Adharshila Trust providing free healthcare to rural communities.|1,000|100%| |3|Rehabilitation of homeless persons in partnership with Society for Promotion of Youth and Masses (SPYM).|149|100%| |4|Health screening camps organised with Fortis.|517|100%| |5|Healthcare support to persons with disabilities in partnership with Samkalp.|642|100%| |6|Social welfare for inclusive development of children from marginalised communities and children with disabilities in partnership with Vision for Health Welfare and Special Needs (VISHWAS) Vidyalaya.|34|100%| |7|DLF Golf Excellence Programme to support talented and aspiring golfers i.e. young boys and girls through intensive coaching in order to ensure they emerge as leaders in the sport of Golf.|12|N.A.| |8|Ambulance services \u2013 DLF Foundation provides 24\u00d77 free ambulance services for general public in multiple locations of Delhi-NCR.|1,690|100%| |9|Support to Gunjan Foundation to provide quality school education to underprivileged children (including provision of school fee, transport, school bags etc.).|179|100%| |10|Affordable healthcare for the poor by providing high end diagnostic equipment including CT Scan machine etc. at the Landour Community Hospital, Mussoorie.|The equipment is used as part of surgical procedures undertaken at the Hospital. serving the population of the area.|100%| |11|Free and subsidised Healthcare facilities provided to stray animals at CGS Hospital\u2019s Pasha Wing.|Animal Beneficiaries Approximately 4,057 OPDs; 497 surgeries; 3,560 vaccines; 2,205 animal cases given radiological diagnostics; 5,837 laboratory tests.|100%| |12|Provided shelter and medical care to animals through a non- profit organization - All Creatures Great and Small (ACGS).|Total Animal Beneficiaries 7,980.|100%| |13|Saving Lives Through Safer Roads project focuses on ensuring pedestrian safety on high traffic roads by constructing safe pedestrian crossovers and corridors, elevator access for differently abled and senior citizens, all-weather tops, foot over bridge, adequate lighting and directional signages.|The project is aimed at general public.|N.A.| |14|Plantation and Greening Projects in Gurugram, Delhi, Noida, Chennai and Hyderabad.|The project is aimed at upgrading the environmental footprint. Total Green Area Developed: 51,558 sq. mtr.; Total trees/ plants planted ~3,77,819.|N.A.| |15|To improve the safety and security of women commuters in streets of Indian cities, DLF Foundation supported Police surveillance of the streets in New Delhi.|The project benefits all women commuters in the identified Project areas.|N.A.| 46 Content ----- PRINCIPLE 9: Businesses should engage with and provide value to their consumers in a responsible manner **Essential Indicators** 1. \\\\x07Describe the mechanisms in place to receive and respond to consumer complaints and feedback. Customer feedback,\\\\n[Source: DLF_13072023190044_BRSR.pdf, ID: DLF_13072023190044_BRSR_40]', annotations=None), TextContent(type='text', text='Accountable Consulted Informed (RACI).|100%| |Workers|Not Applicable4||| 2. Details of fines/ penalties/ punishment/ award/ compounding fees/ settlement amount paid in proceedings (by the entity or by Directors/ KMPs) with regulators/ law enforcement agencies/ judicial institutions, in the FY, in the following format (Note: the entity shall make disclosures on the basis of materiality as specified in Regulation 30 of SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015 and as disclosed on the entity\u2019s website): |Monetary|Col2|Col3|Col4|Col5|Col6| |---|---|---|---|---|---| |Category|NGRBC Principle|Name of the regulatory/ enforcement agencies/ judicial institutions|Amount (In INR)|Brief of the Case|Has an appeal been preferred? (Y/ N)| |Penalty/ Fine|Nil|-|Nil|Not Applicable|| |Settlement|Nil|-|Nil|Not Applicable|| |Compounding fee|Nil|-|Nil|Not Applicable|| |Non-Monetary|||||| |Category|NGRBC Principle|Name of the regulatory/ enforcement agencies/ judicial institutions||Brief of the Case|Has an appeal been preferred? (Y/ N)| |Imprisonment|Nil|-||Not Applicable|| |Punishment|Nil|-||Not Applicable|| 4 All of DLF\u2019s workforce is categorised as \u2018Employees\u2019 and it does not have any \u2018Workers\u2019. Hence in all the sections, details sought for the \u2018Workers\u2019 category are not applicable to DLF. 15 Content ----- DLF ANNUAL REPORT 2022 - 23 Business Responsibility and Sustainability Report 3. Of the instances disclosed in Question 2 above, details of the Appeal/ Revision preferred in cases where monetary or non-monetary action has been appealed. |Case Details|Name of regulatory/ enforcement agencies/ judicial institutions| |---|---| |Not Applicable|| **4.** **Does the entity have an anti-corruption or** **anti-bribery policy? If yes, provide details in brief** **and if available, provide a web-link to the policy.** Yes, DLF has an Anti-Corruption and Anti-Bribery Policy as part of its **[Code of Conduct](https://www.dlf.in/pdf/Code-of-Conduct.pdf)** and **[Business Responsibility and Sustainability](https://www.dlf.in/pdf/DLF-Business-Responsibility-Policy.pdf)** **[Policy](https://www.dlf.in/pdf/DLF-Business-Responsibility-Policy.pdf)** . The policy is applicable to all employees and Board of Directors of the DLF, including its subsidiaries, associates and Joint Venture partners. As per the policy guidelines, DLF has zero tolerance towards any form of bribery and corruption. DLF, its Directors and employees are expected to be aware of and follow all applicable anti-corruption and anti-bribery laws wherever DLF does business. They are prohibited to receive, offer or make directly/ indirectly any illegal payments, gifts, donations or benefits which are intended to obtain business or unethical favours. All Directors and employees at DLF are provided with training on the Code of Conduct, including anti-corruption and anti-bribery guidelines. Furthermore, all Directors and the Senior Management personnel of the Company are required to submit annual compliance declaration, to acknowledge their understanding and affirm compliance to the defined guidelines. DLF has established a Whistle Blower mechanism that allows employees, Directors and third parties to report any unethical business practices, including complaints related to bribery and corruption, to the Whistle Blower Committee or to the Chairman of Audit Committee, for undertaking suitable corrective actions. 5. Number of Directors/ KMPs/ Employees/ Workers against whom disciplinary action was taken by any law enforcement agency for the charges of bribery/ corruption: |Col1|FY 2022-23|FY 2021-22| |---|---|---| |Directors|Nil|Nil| |KMPs|Nil|Nil| |Employees|Nil|Nil| |Workers|Not Applicable4|| **6.** **Details of complaints with regard to conflict of interest:** |Col1|FY 2022-23|Col3|FY 2021-22|Col5| |---|---|---|---|---| ||Number|Remarks|Number|Remarks| |Number of complaints received in relation to issues of Conflict of Interest of the Directors|Nil|-|Nil|-| |Number of complaints received in relation to issues of Conflict of Interest of the\\\\n[Source: DLF_13072023190044_BRSR.pdf, ID: DLF_13072023190044_BRSR_12]', annotations=None)] isError=False\"}",
+    "tool_name": "solve_sandbox",
+    "tool_args": {
+      "plan": "async def solve():\n    # FUNCTION_CALL: 1\n    \"\"\"Search documents to get relevant extracts. Usage: input={\"input\": {\"query\": \"your query\"}} result = await mcp.call_tool('search_stored_documents', input)\"\"\"\n    input = {\"input\": {\"query\": \"summary of bug report S9\"}}\n    result = await mcp.call_tool('search_stored_documents', input)\n\n    # FURTHER_PROCESSING_REQUIRED\n    return f\"FURTHER_PROCESSING_REQUIRED: {result}\""
+    },
+    "tool_result": {
+      "result": "FURTHER_PROCESSING_REQUIRED: meta=None content=[TextContent(type='text', text='date of FY ending, have received performance and career development reviews. 22 Content ----- 10. Health and safety management system: a. Whether an occupational health and safety management system has been implemented by the entity? (Y/ N). If yes, the coverage of such system? Yes, DLF has implemented an occupational health and safety management system aligned to ISO 45001, covering entire operations. It covers the entire business including project sites, managed assets (operational premises) and the hospitality division. b. What are the processes used to identify work-related hazards and assess risks on a routine and non-routine basis by the entity? - Incident Investigation and Risk Analysis: DLF has a well-developed group wide procedure for identification of work-related hazards, on routine and non-routine basis, as defined by its Management System Framework (MSF). Identification of safety related hazards is the responsibility at all levels of leadership in their respective areas of responsibility. The risk evaluation phase assesses the likelihood of causes and severity of consequences from the release of identified hazards against the standard HSE and Security risk threshold parameters. As part of this process, a 5x5 Risk Matrix is deployed across DLF which enables mitigation of risks, including health, safety, environmental and security risks, based on a hierarchy of controls. Furthermore, weekly walkthroughs and scheduled safety observations are performed by trained DLF employees, construction contractors and FM Partners. Occupational Health and Safety (OHS) observations arising from OHS risk assessments and audits, including reporting of leading and lagging indicators, are part of assurances and are reviewed periodically. - Health and Safety Audits: Health and safety audits are conducted for DLF\u2019s rental properties by independent agencies as per ISO 45001 standard. In addition, surprise safety performance audits are also conducted by external agency including DSS Sustainable Solutions India Private Limited and ERM India Private Limited for DLF\u2019s rental facilities. Risk assessments are reviewed on a yearly basis for any incidents reported, or based on enforcement agency, insurers or auditor\u2019s requirement, request received from the safety committee, any changes/ modifications made to the process or safety standards or legal requirement. Recommendations are Content implemented across the business units to prevent recurrence of similar incidents. c. \\x07Whether you have processes for workers to report the work-related hazards and to remove themselves from such risks. (Y/ N). Yes, DLF has a well-defined Standard Operating Procedure (SOP) for incident reporting, classification and investigation for any incidents related to health and safety. This process allows employees to report any work-related hazards and outlines the mechanism for recording and investigating an incident, recommending corrective and preventive actions and to communicate the lessons learned to prevent recurrence of similar incidents. For undertaking corrective and preventive actions, standard hierarchy of controls is followed to bring the hazard at \u2018As Low As Reasonably Practicable\u2019 (ALARP) level. Additionally, various initiatives have been undertaken to promote reporting of workrelated hazards and hazardous situations, such as: - **Safety Inspector of the Day (SIOD)** : Every day, one employee of a particular site is nominated as the SIOD. His duty is to take a round of the facility\\n[Source: DLF_13072023190044_BRSR.pdf, ID: DLF_13072023190044_BRSR_18]', annotations=None), TextContent(type='text', text='acquired based on traditional knowledge. |S. No.|Intellectual Property based on traditional knowledge|Owned/ Acquired (Y/ N)|Benefit shared (Y/ N)|Basis of calculating benefit share| |---|---|---|---|---| |Not Applicable||||| 5. \\x07Details of corrective actions taken or underway, based on any adverse order in intellectual property related disputes wherein usage of traditional knowledge is involved. |Name of authority|Brief of the Case|Corrective action taken| |---|---|---| |Not Applicable||| 17 Data is provided on the basis of proportion of suppliers covered from the total supplier base (by supplier count). 45 Content ----- DLF ANNUAL REPORT 2022 - 23 Business Responsibility and Sustainability Report 6. Details of beneficiaries of CSR Projects: |S. No.|CSR Project|No. of persons benefitted from CSR Projects|% of beneficiaries from vulnerable and marginalized groups| |---|---|---|---| |1|DLF CARES Education Support Programme.|1,550|100%| |2|Family Health Centre in Gwal Pahari, Gurugram in collaboration with Adharshila Trust providing free healthcare to rural communities.|1,000|100%| |3|Rehabilitation of homeless persons in partnership with Society for Promotion of Youth and Masses (SPYM).|149|100%| |4|Health screening camps organised with Fortis.|517|100%| |5|Healthcare support to persons with disabilities in partnership with Samkalp.|642|100%| |6|Social welfare for inclusive development of children from marginalised communities and children with disabilities in partnership with Vision for Health Welfare and Special Needs (VISHWAS) Vidyalaya.|34|100%| |7|DLF Golf Excellence Programme to support talented and aspiring golfers i.e. young boys and girls through intensive coaching in order to ensure they emerge as leaders in the sport of Golf.|12|N.A.| |8|Ambulance services \u2013 DLF Foundation provides 24\u00d77 free ambulance services for general public in multiple locations of Delhi-NCR.|1,690|100%| |9|Support to Gunjan Foundation to provide quality school education to underprivileged children (including provision of school fee, transport, school bags etc.).|179|100%| |10|Affordable healthcare for the poor by providing high end diagnostic equipment including CT Scan machine etc. at the Landour Community Hospital, Mussoorie.|The equipment is used as part of surgical procedures undertaken at the Hospital. serving the population of the area.|100%| |11|Free and subsidised Healthcare facilities provided to stray animals at CGS Hospital\u2019s Pasha Wing.|Animal Beneficiaries Approximately 4,057 OPDs; 497 surgeries; 3,560 vaccines; 2,205 animal cases given radiological diagnostics; 5,837 laboratory tests.|100%| |12|Provided shelter and medical care to animals through a non- profit organization - All Creatures Great and Small (ACGS).|Total Animal Beneficiaries 7,980.|100%| |13|Saving Lives Through Safer Roads project focuses on ensuring pedestrian safety on high traffic roads by constructing safe pedestrian crossovers and corridors, elevator access for differently abled and senior citizens, all-weather tops, foot over bridge, adequate lighting and directional signages.|The project is aimed at general public.|N.A.| |14|Plantation and Greening Projects in Gurugram, Delhi, Noida, Chennai and Hyderabad.|The project is aimed at upgrading the environmental footprint. Total Green Area Developed: 51,558 sq. mtr.; Total trees/ plants planted ~3,77,819.|N.A.| |15|To improve the safety and security of women commuters in streets of Indian cities, DLF Foundation supported Police surveillance of the streets in New Delhi.|The project benefits all women commuters in the identified Project areas.|N.A.| 46 Content ----- PRINCIPLE 9: Businesses should engage with and provide value to their consumers in a responsible manner **Essential Indicators** 1. \\x07Describe the mechanisms in place to receive and respond to consumer complaints and feedback. Customer feedback,\\n[Source: DLF_13072023190044_BRSR.pdf, ID: DLF_13072023190044_BRSR_40]', annotations=None), TextContent(type='text', text='Accountable Consulted Informed (RACI).|100%| |Workers|Not Applicable4||| 2. Details of fines/ penalties/ punishment/ award/ compounding fees/ settlement amount paid in proceedings (by the entity or by Directors/ KMPs) with regulators/ law enforcement agencies/ judicial institutions, in the FY, in the following format (Note: the entity shall make disclosures on the basis of materiality as specified in Regulation 30 of SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015 and as disclosed on the entity\u2019s website): |Monetary|Col2|Col3|Col4|Col5|Col6| |---|---|---|---|---|---| |Category|NGRBC Principle|Name of the regulatory/ enforcement agencies/ judicial institutions|Amount (In INR)|Brief of the Case|Has an appeal been preferred? (Y/ N)| |Penalty/ Fine|Nil|-|Nil|Not Applicable|| |Settlement|Nil|-|Nil|Not Applicable|| |Compounding fee|Nil|-|Nil|Not Applicable|| |Non-Monetary|||||| |Category|NGRBC Principle|Name of the regulatory/ enforcement agencies/ judicial institutions||Brief of the Case|Has an appeal been preferred? (Y/ N)| |Imprisonment|Nil|-||Not Applicable|| |Punishment|Nil|-||Not Applicable|| 4 All of DLF\u2019s workforce is categorised as \u2018Employees\u2019 and it does not have any \u2018Workers\u2019. Hence in all the sections, details sought for the \u2018Workers\u2019 category are not applicable to DLF. 15 Content ----- DLF ANNUAL REPORT 2022 - 23 Business Responsibility and Sustainability Report 3. Of the instances disclosed in Question 2 above, details of the Appeal/ Revision preferred in cases where monetary or non-monetary action has been appealed. |Case Details|Name of regulatory/ enforcement agencies/ judicial institutions| |---|---| |Not Applicable|| **4.** **Does the entity have an anti-corruption or** **anti-bribery policy? If yes, provide details in brief** **and if available, provide a web-link to the policy.** Yes, DLF has an Anti-Corruption and Anti-Bribery Policy as part of its **[Code of Conduct](https://www.dlf.in/pdf/Code-of-Conduct.pdf)** and **[Business Responsibility and Sustainability](https://www.dlf.in/pdf/DLF-Business-Responsibility-Policy.pdf)** **[Policy](https://www.dlf.in/pdf/DLF-Business-Responsibility-Policy.pdf)** . The policy is applicable to all employees and Board of Directors of the DLF, including its subsidiaries, associates and Joint Venture partners. As per the policy guidelines, DLF has zero tolerance towards any form of bribery and corruption. DLF, its Directors and employees are expected to be aware of and follow all applicable anti-corruption and anti-bribery laws wherever DLF does business. They are prohibited to receive, offer or make directly/ indirectly any illegal payments, gifts, donations or benefits which are intended to obtain business or unethical favours. All Directors and employees at DLF are provided with training on the Code of Conduct, including anti-corruption and anti-bribery guidelines. Furthermore, all Directors and the Senior Management personnel of the Company are required to submit annual compliance declaration, to acknowledge their understanding and affirm compliance to the defined guidelines. DLF has established a Whistle Blower mechanism that allows employees, Directors and third parties to report any unethical business practices, including complaints related to bribery and corruption, to the Whistle Blower Committee or to the Chairman of Audit Committee, for undertaking suitable corrective actions. 5. Number of Directors/ KMPs/ Employees/ Workers against whom disciplinary action was taken by any law enforcement agency for the charges of bribery/ corruption: |Col1|FY 2022-23|FY 2021-22| |---|---|---| |Directors|Nil|Nil| |KMPs|Nil|Nil| |Employees|Nil|Nil| |Workers|Not Applicable4|| **6.** **Details of complaints with regard to conflict of interest:** |Col1|FY 2022-23|Col3|FY 2021-22|Col5| |---|---|---|---|---| ||Number|Remarks|Number|Remarks| |Number of complaints received in relation to issues of Conflict of Interest of the Directors|Nil|-|Nil|-| |Number of complaints received in relation to issues of Conflict of Interest of the\\n[Source: DLF_13072023190044_BRSR.pdf, ID: DLF_13072023190044_BRSR_12]', annotations=None)] isError=False"
+    },
+    "final_answer": null,
+    "tags": [
+      "sandbox"
+    ],
+    "success": true,
+    "metadata": {}
+  },
+  {
+    "timestamp": 1747894432.7415414,
+    "type": "tool_output",
+    "text": "Output of perception: {'result': PerceptionResult(intent='Summarize the provided content from the PDF document.', entities=['S9_bug_report_summary.pdf', 'DLF_13072023190044_BRSR.pdf'], tool_hint='The documents tool can be used to summarize the provided text.', tags=[], selected_servers=['documents'])}",
+    "tool_name": "perception",
+    "tool_args": {
+      "perception": {
+        "intent": "Summarize the provided content from the PDF document.",
+        "entities": [
+          "S9_bug_report_summary.pdf",
+          "DLF_13072023190044_BRSR.pdf"
+        ],
+        "tool_hint": "The documents tool can be used to summarize the provided text.",
+        "tags": [],
+        "selected_servers": [
+          "documents"
+        ]
+      }
+    },
+    "tool_result": {
+      "result": {
+        "intent": "Summarize the provided content from the PDF document.",
+        "entities": [
+          "S9_bug_report_summary.pdf",
+          "DLF_13072023190044_BRSR.pdf"
+        ],
+        "tool_hint": "The documents tool can be used to summarize the provided text.",
+        "tags": [],
+        "selected_servers": [
+          "documents"
+        ]
+      }
+    },
+    "final_answer": null,
+    "tags": [
+      "perception"
+    ],
+    "success": true,
+    "metadata": {}
+  },
+  {
+    "timestamp": 1747894434.7370923,
+    "type": "tool_output",
+    "text": "Output of plan: {'result': 'async def solve():\\n    # FUNCTION_CALL: 1\\n    \"\"\"Search documents to get relevant extracts. Usage: input={\"input\": {\"query\": \"your query\"}} result = await mcp.call_tool(\\'search_stored_documents\\', input)\"\"\"\\n    input = {\"input\": {\"query\": \"summary of S9 bug report and DLF_13072023190044_BRSR.pdf\"}}\\n    result = await mcp.call_tool(\\'search_stored_documents\\', input)\\n\\n    # FURTHER_PROCESSING_REQUIRED\\n    return f\"FURTHER_PROCESSING_REQUIRED: {result}\"'}",
+    "tool_name": "plan",
+    "tool_args": {
+      "plan": "async def solve():\n    # FUNCTION_CALL: 1\n    \"\"\"Search documents to get relevant extracts. Usage: input={\"input\": {\"query\": \"your query\"}} result = await mcp.call_tool('search_stored_documents', input)\"\"\"\n    input = {\"input\": {\"query\": \"summary of S9 bug report and DLF_13072023190044_BRSR.pdf\"}}\n    result = await mcp.call_tool('search_stored_documents', input)\n\n    # FURTHER_PROCESSING_REQUIRED\n    return f\"FURTHER_PROCESSING_REQUIRED: {result}\""
+    },
+    "tool_result": {
+      "result": "async def solve():\n    # FUNCTION_CALL: 1\n    \"\"\"Search documents to get relevant extracts. Usage: input={\"input\": {\"query\": \"your query\"}} result = await mcp.call_tool('search_stored_documents', input)\"\"\"\n    input = {\"input\": {\"query\": \"summary of S9 bug report and DLF_13072023190044_BRSR.pdf\"}}\n    result = await mcp.call_tool('search_stored_documents', input)\n\n    # FURTHER_PROCESSING_REQUIRED\n    return f\"FURTHER_PROCESSING_REQUIRED: {result}\""
+    },
+    "final_answer": null,
+    "tags": [
+      "plan"
+    ],
+    "success": true,
+    "metadata": {}
+  },
+  {
+    "timestamp": 1747894446.812911,
+    "type": "tool_output",
+    "text": "Output of solve_sandbox: {'result': \"FURTHER_PROCESSING_REQUIRED: meta=None content=[TextContent(type='text', text='Maintenance Category from USGBC. LEED Pre-Certification for \u2018Platinum\u2019 rating (Core and Shell Development) from USGBC. LEED Zero Water Certification from USGBC. LEED Zero Waste Certification from USGBC for DLF Cybercity - Hyderabad.| |P7|-| |P8|DLF\u2019s Corporate Social Responsibility Policy is in accordance with the provisions of Section 135 of the Companies Act, 2013 and the Rules made thereunder.| |P9|ISO 14001:2015 Environment Management System. ISO 9001 certified Quality Management System. WELL Health-Safety Rating for Facility Operations and Management by International WELL Building Institute. Sword of Honour from the British Safety Council-five-star safety rating system, awarded to DLF\u2019s commercial, retail and hospitality properties.|\\\\n[Source: DLF_13072023190044_BRSR.pdf, ID: DLF_13072023190044_BRSR_10]', annotations=None), TextContent(type='text', text='acquired based on traditional knowledge. |S. No.|Intellectual Property based on traditional knowledge|Owned/ Acquired (Y/ N)|Benefit shared (Y/ N)|Basis of calculating benefit share| |---|---|---|---|---| |Not Applicable||||| 5. \\\\x07Details of corrective actions taken or underway, based on any adverse order in intellectual property related disputes wherein usage of traditional knowledge is involved. |Name of authority|Brief of the Case|Corrective action taken| |---|---|---| |Not Applicable||| 17 Data is provided on the basis of proportion of suppliers covered from the total supplier base (by supplier count). 45 Content ----- DLF ANNUAL REPORT 2022 - 23 Business Responsibility and Sustainability Report 6. Details of beneficiaries of CSR Projects: |S. No.|CSR Project|No. of persons benefitted from CSR Projects|% of beneficiaries from vulnerable and marginalized groups| |---|---|---|---| |1|DLF CARES Education Support Programme.|1,550|100%| |2|Family Health Centre in Gwal Pahari, Gurugram in collaboration with Adharshila Trust providing free healthcare to rural communities.|1,000|100%| |3|Rehabilitation of homeless persons in partnership with Society for Promotion of Youth and Masses (SPYM).|149|100%| |4|Health screening camps organised with Fortis.|517|100%| |5|Healthcare support to persons with disabilities in partnership with Samkalp.|642|100%| |6|Social welfare for inclusive development of children from marginalised communities and children with disabilities in partnership with Vision for Health Welfare and Special Needs (VISHWAS) Vidyalaya.|34|100%| |7|DLF Golf Excellence Programme to support talented and aspiring golfers i.e. young boys and girls through intensive coaching in order to ensure they emerge as leaders in the sport of Golf.|12|N.A.| |8|Ambulance services \u2013 DLF Foundation provides 24\u00d77 free ambulance services for general public in multiple locations of Delhi-NCR.|1,690|100%| |9|Support to Gunjan Foundation to provide quality school education to underprivileged children (including provision of school fee, transport, school bags etc.).|179|100%| |10|Affordable healthcare for the poor by providing high end diagnostic equipment including CT Scan machine etc. at the Landour Community Hospital, Mussoorie.|The equipment is used as part of surgical procedures undertaken at the Hospital. serving the population of the area.|100%| |11|Free and subsidised Healthcare facilities provided to stray animals at CGS Hospital\u2019s Pasha Wing.|Animal Beneficiaries Approximately 4,057 OPDs; 497 surgeries; 3,560 vaccines; 2,205 animal cases given radiological diagnostics; 5,837 laboratory tests.|100%| |12|Provided shelter and medical care to animals through a non- profit organization - All Creatures Great and Small (ACGS).|Total Animal Beneficiaries 7,980.|100%| |13|Saving Lives Through Safer Roads project focuses on ensuring pedestrian safety on high traffic roads by constructing safe pedestrian crossovers and corridors, elevator access for differently abled and senior citizens, all-weather tops, foot over bridge, adequate lighting and directional signages.|The project is aimed at general public.|N.A.| |14|Plantation and Greening Projects in Gurugram, Delhi, Noida, Chennai and Hyderabad.|The project is aimed at upgrading the environmental footprint. Total Green Area Developed: 51,558 sq. mtr.; Total trees/ plants planted ~3,77,819.|N.A.| |15|To improve the safety and security of women commuters in streets of Indian cities, DLF Foundation supported Police surveillance of the streets in New Delhi.|The project benefits all women commuters in the identified Project areas.|N.A.| 46 Content ----- PRINCIPLE 9: Businesses should engage with and provide value to their consumers in a responsible manner **Essential Indicators** 1. \\\\x07Describe the mechanisms in place to receive and respond to consumer complaints and feedback. Customer feedback,\\\\n[Source: DLF_13072023190044_BRSR.pdf, ID: DLF_13072023190044_BRSR_40]', annotations=None), TextContent(type='text', text='date of FY ending, have received performance and career development reviews. 22 Content ----- 10. Health and safety management system: a. Whether an occupational health and safety management system has been implemented by the entity? (Y/ N). If yes, the coverage of such system? Yes, DLF has implemented an occupational health and safety management system aligned to ISO 45001, covering entire operations. It covers the entire business including project sites, managed assets (operational premises) and the hospitality division. b. What are the processes used to identify work-related hazards and assess risks on a routine and non-routine basis by the entity? - Incident Investigation and Risk Analysis: DLF has a well-developed group wide procedure for identification of work-related hazards, on routine and non-routine basis, as defined by its Management System Framework (MSF). Identification of safety related hazards is the responsibility at all levels of leadership in their respective areas of responsibility. The risk evaluation phase assesses the likelihood of causes and severity of consequences from the release of identified hazards against the standard HSE and Security risk threshold parameters. As part of this process, a 5x5 Risk Matrix is deployed across DLF which enables mitigation of risks, including health, safety, environmental and security risks, based on a hierarchy of controls. Furthermore, weekly walkthroughs and scheduled safety observations are performed by trained DLF employees, construction contractors and FM Partners. Occupational Health and Safety (OHS) observations arising from OHS risk assessments and audits, including reporting of leading and lagging indicators, are part of assurances and are reviewed periodically. - Health and Safety Audits: Health and safety audits are conducted for DLF\u2019s rental properties by independent agencies as per ISO 45001 standard. In addition, surprise safety performance audits are also conducted by external agency including DSS Sustainable Solutions India Private Limited and ERM India Private Limited for DLF\u2019s rental facilities. Risk assessments are reviewed on a yearly basis for any incidents reported, or based on enforcement agency, insurers or auditor\u2019s requirement, request received from the safety committee, any changes/ modifications made to the process or safety standards or legal requirement. Recommendations are Content implemented across the business units to prevent recurrence of similar incidents. c. \\\\x07Whether you have processes for workers to report the work-related hazards and to remove themselves from such risks. (Y/ N). Yes, DLF has a well-defined Standard Operating Procedure (SOP) for incident reporting, classification and investigation for any incidents related to health and safety. This process allows employees to report any work-related hazards and outlines the mechanism for recording and investigating an incident, recommending corrective and preventive actions and to communicate the lessons learned to prevent recurrence of similar incidents. For undertaking corrective and preventive actions, standard hierarchy of controls is followed to bring the hazard at \u2018As Low As Reasonably Practicable\u2019 (ALARP) level. Additionally, various initiatives have been undertaken to promote reporting of workrelated hazards and hazardous situations, such as: - **Safety Inspector of the Day (SIOD)** : Every day, one employee of a particular site is nominated as the SIOD. His duty is to take a round of the facility\\\\n[Source: DLF_13072023190044_BRSR.pdf, ID: DLF_13072023190044_BRSR_18]', annotations=None)] isError=False\"}",
+    "tool_name": "solve_sandbox",
+    "tool_args": {
+      "plan": "async def solve():\n    # FUNCTION_CALL: 1\n    \"\"\"Search documents to get relevant extracts. Usage: input={\"input\": {\"query\": \"your query\"}} result = await mcp.call_tool('search_stored_documents', input)\"\"\"\n    input = {\"input\": {\"query\": \"summary of S9 bug report and DLF_13072023190044_BRSR.pdf\"}}\n    result = await mcp.call_tool('search_stored_documents', input)\n\n    # FURTHER_PROCESSING_REQUIRED\n    return f\"FURTHER_PROCESSING_REQUIRED: {result}\""
+    },
+    "tool_result": {
+      "result": "FURTHER_PROCESSING_REQUIRED: meta=None content=[TextContent(type='text', text='Maintenance Category from USGBC. LEED Pre-Certification for \u2018Platinum\u2019 rating (Core and Shell Development) from USGBC. LEED Zero Water Certification from USGBC. LEED Zero Waste Certification from USGBC for DLF Cybercity - Hyderabad.| |P7|-| |P8|DLF\u2019s Corporate Social Responsibility Policy is in accordance with the provisions of Section 135 of the Companies Act, 2013 and the Rules made thereunder.| |P9|ISO 14001:2015 Environment Management System. ISO 9001 certified Quality Management System. WELL Health-Safety Rating for Facility Operations and Management by International WELL Building Institute. Sword of Honour from the British Safety Council-five-star safety rating system, awarded to DLF\u2019s commercial, retail and hospitality properties.|\\n[Source: DLF_13072023190044_BRSR.pdf, ID: DLF_13072023190044_BRSR_10]', annotations=None), TextContent(type='text', text='acquired based on traditional knowledge. |S. No.|Intellectual Property based on traditional knowledge|Owned/ Acquired (Y/ N)|Benefit shared (Y/ N)|Basis of calculating benefit share| |---|---|---|---|---| |Not Applicable||||| 5. \\x07Details of corrective actions taken or underway, based on any adverse order in intellectual property related disputes wherein usage of traditional knowledge is involved. |Name of authority|Brief of the Case|Corrective action taken| |---|---|---| |Not Applicable||| 17 Data is provided on the basis of proportion of suppliers covered from the total supplier base (by supplier count). 45 Content ----- DLF ANNUAL REPORT 2022 - 23 Business Responsibility and Sustainability Report 6. Details of beneficiaries of CSR Projects: |S. No.|CSR Project|No. of persons benefitted from CSR Projects|% of beneficiaries from vulnerable and marginalized groups| |---|---|---|---| |1|DLF CARES Education Support Programme.|1,550|100%| |2|Family Health Centre in Gwal Pahari, Gurugram in collaboration with Adharshila Trust providing free healthcare to rural communities.|1,000|100%| |3|Rehabilitation of homeless persons in partnership with Society for Promotion of Youth and Masses (SPYM).|149|100%| |4|Health screening camps organised with Fortis.|517|100%| |5|Healthcare support to persons with disabilities in partnership with Samkalp.|642|100%| |6|Social welfare for inclusive development of children from marginalised communities and children with disabilities in partnership with Vision for Health Welfare and Special Needs (VISHWAS) Vidyalaya.|34|100%| |7|DLF Golf Excellence Programme to support talented and aspiring golfers i.e. young boys and girls through intensive coaching in order to ensure they emerge as leaders in the sport of Golf.|12|N.A.| |8|Ambulance services \u2013 DLF Foundation provides 24\u00d77 free ambulance services for general public in multiple locations of Delhi-NCR.|1,690|100%| |9|Support to Gunjan Foundation to provide quality school education to underprivileged children (including provision of school fee, transport, school bags etc.).|179|100%| |10|Affordable healthcare for the poor by providing high end diagnostic equipment including CT Scan machine etc. at the Landour Community Hospital, Mussoorie.|The equipment is used as part of surgical procedures undertaken at the Hospital. serving the population of the area.|100%| |11|Free and subsidised Healthcare facilities provided to stray animals at CGS Hospital\u2019s Pasha Wing.|Animal Beneficiaries Approximately 4,057 OPDs; 497 surgeries; 3,560 vaccines; 2,205 animal cases given radiological diagnostics; 5,837 laboratory tests.|100%| |12|Provided shelter and medical care to animals through a non- profit organization - All Creatures Great and Small (ACGS).|Total Animal Beneficiaries 7,980.|100%| |13|Saving Lives Through Safer Roads project focuses on ensuring pedestrian safety on high traffic roads by constructing safe pedestrian crossovers and corridors, elevator access for differently abled and senior citizens, all-weather tops, foot over bridge, adequate lighting and directional signages.|The project is aimed at general public.|N.A.| |14|Plantation and Greening Projects in Gurugram, Delhi, Noida, Chennai and Hyderabad.|The project is aimed at upgrading the environmental footprint. Total Green Area Developed: 51,558 sq. mtr.; Total trees/ plants planted ~3,77,819.|N.A.| |15|To improve the safety and security of women commuters in streets of Indian cities, DLF Foundation supported Police surveillance of the streets in New Delhi.|The project benefits all women commuters in the identified Project areas.|N.A.| 46 Content ----- PRINCIPLE 9: Businesses should engage with and provide value to their consumers in a responsible manner **Essential Indicators** 1. \\x07Describe the mechanisms in place to receive and respond to consumer complaints and feedback. Customer feedback,\\n[Source: DLF_13072023190044_BRSR.pdf, ID: DLF_13072023190044_BRSR_40]', annotations=None), TextContent(type='text', text='date of FY ending, have received performance and career development reviews. 22 Content ----- 10. Health and safety management system: a. Whether an occupational health and safety management system has been implemented by the entity? (Y/ N). If yes, the coverage of such system? Yes, DLF has implemented an occupational health and safety management system aligned to ISO 45001, covering entire operations. It covers the entire business including project sites, managed assets (operational premises) and the hospitality division. b. What are the processes used to identify work-related hazards and assess risks on a routine and non-routine basis by the entity? - Incident Investigation and Risk Analysis: DLF has a well-developed group wide procedure for identification of work-related hazards, on routine and non-routine basis, as defined by its Management System Framework (MSF). Identification of safety related hazards is the responsibility at all levels of leadership in their respective areas of responsibility. The risk evaluation phase assesses the likelihood of causes and severity of consequences from the release of identified hazards against the standard HSE and Security risk threshold parameters. As part of this process, a 5x5 Risk Matrix is deployed across DLF which enables mitigation of risks, including health, safety, environmental and security risks, based on a hierarchy of controls. Furthermore, weekly walkthroughs and scheduled safety observations are performed by trained DLF employees, construction contractors and FM Partners. Occupational Health and Safety (OHS) observations arising from OHS risk assessments and audits, including reporting of leading and lagging indicators, are part of assurances and are reviewed periodically. - Health and Safety Audits: Health and safety audits are conducted for DLF\u2019s rental properties by independent agencies as per ISO 45001 standard. In addition, surprise safety performance audits are also conducted by external agency including DSS Sustainable Solutions India Private Limited and ERM India Private Limited for DLF\u2019s rental facilities. Risk assessments are reviewed on a yearly basis for any incidents reported, or based on enforcement agency, insurers or auditor\u2019s requirement, request received from the safety committee, any changes/ modifications made to the process or safety standards or legal requirement. Recommendations are Content implemented across the business units to prevent recurrence of similar incidents. c. \\x07Whether you have processes for workers to report the work-related hazards and to remove themselves from such risks. (Y/ N). Yes, DLF has a well-defined Standard Operating Procedure (SOP) for incident reporting, classification and investigation for any incidents related to health and safety. This process allows employees to report any work-related hazards and outlines the mechanism for recording and investigating an incident, recommending corrective and preventive actions and to communicate the lessons learned to prevent recurrence of similar incidents. For undertaking corrective and preventive actions, standard hierarchy of controls is followed to bring the hazard at \u2018As Low As Reasonably Practicable\u2019 (ALARP) level. Additionally, various initiatives have been undertaken to promote reporting of workrelated hazards and hazardous situations, such as: - **Safety Inspector of the Day (SIOD)** : Every day, one employee of a particular site is nominated as the SIOD. His duty is to take a round of the facility\\n[Source: DLF_13072023190044_BRSR.pdf, ID: DLF_13072023190044_BRSR_18]', annotations=None)] isError=False"
+    },
+    "final_answer": null,
+    "tags": [
+      "sandbox"
+    ],
+    "success": true,
+    "metadata": {}
+  }
+]

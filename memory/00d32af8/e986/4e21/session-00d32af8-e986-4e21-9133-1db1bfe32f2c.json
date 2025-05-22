@@ -1,0 +1,19 @@
+[
+  {
+    "timestamp": 1747568648.5533886,
+    "type": "run_metadata",
+    "text": "Started new session with input: what is the heighest peak in the worls at 2025-05-18T11:44:08.553388",
+    "tool_name": null,
+    "tool_args": null,
+    "tool_result": null,
+    "final_answer": null,
+    "tags": [
+      "run_start"
+    ],
+    "success": null,
+    "metadata": {
+      "start_time": "2025-05-18T17:14:08.553388",
+      "step": 0
+    }
+  }
+]

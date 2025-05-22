@@ -1,0 +1,19 @@
+[
+  {
+    "timestamp": 1747586926.1500015,
+    "type": "run_metadata",
+    "text": "Started new session with input: what is the highest peak in the world? at 2025-05-18T16:48:46.150001",
+    "tool_name": null,
+    "tool_args": null,
+    "tool_result": null,
+    "final_answer": null,
+    "tags": [
+      "run_start"
+    ],
+    "success": null,
+    "metadata": {
+      "start_time": "2025-05-18T22:18:46.150001",
+      "step": 0
+    }
+  }
+]

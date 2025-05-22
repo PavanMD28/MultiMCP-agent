@@ -1,0 +1,19 @@
+[
+  {
+    "timestamp": 1747665903.997835,
+    "type": "run_metadata",
+    "text": "Started new session with input: How much Anmol singh paid to Capbridge? use local documents at 2025-05-19T14:45:03.997835",
+    "tool_name": null,
+    "tool_args": null,
+    "tool_result": null,
+    "final_answer": null,
+    "tags": [
+      "run_start"
+    ],
+    "success": null,
+    "metadata": {
+      "start_time": "2025-05-19T20:15:03.997835",
+      "step": 0
+    }
+  }
+]
